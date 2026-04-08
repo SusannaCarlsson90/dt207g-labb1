@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Lägg till kurs</title>
+    
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+<body>
+  <header>  
+    <div class="nav">
+      <label for="toggle" id="label">&#9776;</label>
+      <input type="checkbox" id="toggle">
+      <div class="menu">
+        <a href="/">Hem</a>
+        <a href="/courses"><span id="logo">Lägg till kurs</span></a>
+        <a href="/about">Om</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1>Lägg till en ny kurs</h1>
+
+    <% if (typeof error !== 'undefined' && error) { %>
+      <p style="color: red;"><%= error %></p>
+    <% } %>
+
+     <form method="post" action="/courses">
+      <label for="courseCode">Kurskod</label>
+      <input type="text" id="courseCode" name="courseCode">
+      <br>
+      <label for="courseName">Kursnamn</label>
+      <input type="text" id="courseName" name="courseName">
+      <br>
+      <label for="coursePlan">Kursplan</label>
+      <input type="text" id="coursePlan" name="coursePlan">
+      <br>
+      <label for="progression">Progression</label>
+      <input type="text" id="progression" name="progression">
+      <br>
+      <label for="term">Termin</label>
+<input type="text" id="term" name="term">
+<br>
+
+<label for="points">Högskolepoäng</label>
+<input type="number" step="0.1" id="points" name="points">
+<br>
+  
+      <input type="submit" value="Lägg till ny kurs">
+    </form>
+      
+</main>
+
+    <footer>
+      <div class="footer-info">
+        <p><strong>Projektuppgift Frontend-baserad utveckling VT 2026</strong></p>
+        <p>suca2500@student.miun.se</p>
+        
+      </div>
+     </footer>
+
+ 
+</body>
+</html>

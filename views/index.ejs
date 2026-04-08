@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Startisda</title>
+    
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+<body>
+  <header>  
+    <div class="nav">
+      <label for="toggle" id="label">&#9776;</label>
+      <input type="checkbox" id="toggle">
+      <div class="menu">
+        <a href="/"><span id="logo">Hem</span></a>
+        <a href="/courses">Lägg till kurs</a>
+        <a href="/about">Om</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1>Mina genomförda kurser</h1>
+    <table>
+      <tr>
+        <th>Kod</th>
+        <th>Namn</th>
+        <th>Progression</th>
+        <th>Kursplan</th>
+        <th>Termin</th>
+        <th>Högskolepoäng</th>
+      </tr>
+
+      <% courses.forEach(course => { %>
+      <tr>
+        <td><%= course.coursecode %></td>
+        <td><%= course.coursename %></td>
+        <td><%= course.progression %></td>
+        <td> <a href="<%= course.syllabus %>">Länk</a></td>
+        <td><%= course.term %></td>
+<td><%= course.points %> hp</td>
+        <td> <a href="/delete/<%= course.id %>">Radera</a></td>
+
+      </tr><%}); %> 
+    </table>
+      
+</main>
+
+    <footer>
+      <div class="footer-info">
+        <p><strong>Projektuppgift Frontend-baserad utveckling VT 2026</strong></p>
+        <p>suca2500@student.miun.se</p>
+        
+      </div>
+     </footer>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
