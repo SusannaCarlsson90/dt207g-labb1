@@ -54,9 +54,9 @@ span#logo{
 main {
     background-color: white;
     max-width: 80ch;         
-    margin: 20px auto; // Centrerar main
+    margin: 20px auto;
     padding: 40px;
-    border-radius: 8px; // Runda hörn
+    border-radius: 8px; 
 }
 
 h1, h2 {
