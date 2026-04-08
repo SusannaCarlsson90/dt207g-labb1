@@ -51,6 +51,33 @@ span#logo{
     font-size: 25px;
 }
 
+main {
+    background-color: white;
+    max-width: 80ch;         
+    margin: 20px auto; // Centrerar main
+    padding: 40px;
+    border-radius: 8px; // Runda hörn
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-height: 500px;
+}
+
+th, td {
+    padding: 12px;
+text-align: left;
+border-bottom: 1px solid #6c757d; 
+}
+
+tr:hover {
+    background-color: #ccc;
+  }
 @media only screen and (max-width: 868px){
     #label{
         display: block;
