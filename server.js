@@ -52,7 +52,7 @@ app.post("/courses", (req, res) => {
   let newPoints = req.body.points;
   let error = null;
   const sql =
-    "INSERT INTO courses (coursecode, coursename, syllabus, progression, term, points) VALUES (?, ?, ?, ?, ?, ?)";
+    "INSERT INTO courses (coursecode, coursename, syllabus, progression, term, points) VALUES (?, ?, ?, ?, ?, ?)"; //använder "?" för att förhindra SQL-injection
 
   // Kontrollera att alla fält är ifyllda
   if (
@@ -96,7 +96,7 @@ app.post("/courses", (req, res) => {
 
 //Radera
 app.get("/delete/:id", (req, res) => {
-  // Vi hämtar ID som ska raderas från adressfältet
+  //Hämtar ID som ska raderas från adressfältet
   let id = req.params.id;
 
   // SQL-frågan
