@@ -1,6 +1,4 @@
-Länk till Loom där inspelning gjorts (bäst kvalité): https://www.loom.com/share/f4f9e28da7a34e7a9e291233a05ba28e
-
-Länk till youtube om ni ej kan öppna Loom länk: https://www.youtube.com/watch?v=DlgQrw-CS5I
+Länk till Loom där inspelning gjorts (bäst kvalité): https://www.loom.com/share/ab926d4e9ad5490b9d19ed2f74ac2819
 
 Laboration 1 Kurslista
 
