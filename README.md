@@ -1,4 +1,4 @@
-Länk till Loom där inspelning gjorts (bäst kvalité): https://www.loom.com/share/ab926d4e9ad5490b9d19ed2f74ac2819
+Länk till Loom där inspelning gjorts : https://www.loom.com/share/ab926d4e9ad5490b9d19ed2f74ac2819
 
 Laboration 1 Kurslista
 
